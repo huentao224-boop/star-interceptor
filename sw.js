@@ -18,7 +18,7 @@ self.addEventListener('fetch', (event) => {
 	// 仅缓存同源资源（跨域 CDN 自带缓存）
 	if (url.origin === self.location.origin && /\.(wasm|pck|js|png|woff2?)$/.test(url.pathname)) {
 		event.respondWith(
-			caches.open('si-v3').then(async (cache) => {
+			caches.open('si-v4').then(async (cache) => {
 				const hit = await cache.match(req);
 				if (hit) { return hit; }
 				const resp = await fetch(req);

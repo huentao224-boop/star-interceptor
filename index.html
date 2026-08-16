@@ -173,11 +173,10 @@ progress#status-progress::-webkit-progress-value {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"mainPack":"https://cdn.jsdelivr.net/gh/huentao224-boop/star-interceptor@gh-pages/index.pck","canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":8185192,"index.wasm":39513091},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":8185192,"index.wasm":39513091},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
-if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js?v=7', { updateViaCache: 'none' }); }
-if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js?v=6', { updateViaCache: 'none' }); }
+if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js?v=8', { updateViaCache: 'none' }); }
 document.getElementById('coi-status').textContent = 'coi:' + (window.crossOriginIsolated ? 'yes' : 'no') + ' sw:' + ('serviceWorker' in navigator);
 
 (function () {
